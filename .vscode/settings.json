@@ -3,20 +3,11 @@
         "servers": {
             "ado": {
                 "type": "stdio",
-                "command": "npx",
+                "command": "mcp-server-azuredevops",
                 "args": [
-                    "-y",
-                    "@azure-devops/mcp",
-                    "${ADO_ORG}"
+                    "${AZURE_DEVOPS_ORG}"
                 ]
             }
-        },
-        "inputs": [
-            {
-                "id": "ado_org",
-                "type": "promptString",
-                "description": "Azure DevOps organization name  (e.g. 'contoso')"
-            }
-        ]
+        }
     }
 }

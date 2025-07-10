@@ -23,6 +23,6 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "az devops configure --defaults organization=https://dev.azure.com/${AZURE_DEVOPS_ORG} project=${AZURE_DEVOPS_PROJECT}",
+	"postCreateCommand": "az devops configure --defaults organization=https://dev.azure.com/${AZURE_DEVOPS_ORG} project=${AZURE_DEVOPS_PROJECT}; unset NODE_OPTIONS && node --version; git clone https://github.com/microsoft/azure-devops-mcp.git ./ado-src; cd ./ado-src; npm update; npm install -g",
 	"runArgs": ["--env-file",".devcontainer/devcontainer.env"]
 }

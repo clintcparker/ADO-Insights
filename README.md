@@ -9,7 +9,7 @@ This repository is configured to run an ADO MCP service that provides insights i
 1. Re-open the repository in a dev container to apply the changes.
 1. Login to the Azure CLI:
    ```bash
-   az login
+   az login --use-device-code  
    ```
 1. Select the custom chat mode "ADO Insights" in "Ask/Agent" dropdown.
 1. Begin chatting with the agent of your choice about your ADO projects.
