@@ -1,4 +1,4 @@
 .devcontainer/.env
 .env
-.devcontainer/.env
+.devcontainer/devcontainer.env
 ado-src/
