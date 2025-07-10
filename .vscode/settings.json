@@ -1,7 +1,7 @@
 {
     "mcp": {
         "servers": {
-            "ado-cs": {
+            "ado": {
                 "type": "stdio",
                 "command": "npx",
                 "args": [
