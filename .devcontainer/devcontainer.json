@@ -23,6 +23,6 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "az devops configure --defaults organization=https://dev.azure.com/AZURE_DEVOPS_ORG project=AZURE_DEVOPS_PROJECT",
+	"postCreateCommand": "az devops configure --defaults organization=https://dev.azure.com/${AZURE_DEVOPS_ORG} project=${AZURE_DEVOPS_PROJECT}",
 	"runArgs": ["--env-file",".devcontainer/devcontainer.env"]
 }
